@@ -38,14 +38,17 @@
             this.X2 = new System.Windows.Forms.Label();
             this.CriarMatriz = new System.Windows.Forms.Button();
             this.CriarMatriz2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.bttSoma = new System.Windows.Forms.Button();
+            this.bttSubtrair = new System.Windows.Forms.Button();
+            this.bttMult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Matriz1
             // 
+            this.Matriz1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Matriz1.AutoSize = true;
             this.Matriz1.Font = new System.Drawing.Font("Moire", 11F);
-            this.Matriz1.Location = new System.Drawing.Point(52, 9);
+            this.Matriz1.Location = new System.Drawing.Point(114, 12);
             this.Matriz1.Name = "Matriz1";
             this.Matriz1.Size = new System.Drawing.Size(71, 18);
             this.Matriz1.TabIndex = 0;
@@ -54,9 +57,10 @@
             // 
             // Matriz2
             // 
+            this.Matriz2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Matriz2.AutoSize = true;
             this.Matriz2.Font = new System.Drawing.Font("Moire", 11F);
-            this.Matriz2.Location = new System.Drawing.Point(453, 9);
+            this.Matriz2.Location = new System.Drawing.Point(515, 12);
             this.Matriz2.Name = "Matriz2";
             this.Matriz2.Size = new System.Drawing.Size(71, 18);
             this.Matriz2.TabIndex = 1;
@@ -65,7 +69,8 @@
             // 
             // Linhas1
             // 
-            this.Linhas1.Location = new System.Drawing.Point(34, 34);
+            this.Linhas1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Linhas1.Location = new System.Drawing.Point(96, 37);
             this.Linhas1.Multiline = true;
             this.Linhas1.Name = "Linhas1";
             this.Linhas1.Size = new System.Drawing.Size(34, 25);
@@ -74,7 +79,8 @@
             // 
             // Colunas1
             // 
-            this.Colunas1.Location = new System.Drawing.Point(97, 34);
+            this.Colunas1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Colunas1.Location = new System.Drawing.Point(159, 37);
             this.Colunas1.Multiline = true;
             this.Colunas1.Name = "Colunas1";
             this.Colunas1.Size = new System.Drawing.Size(34, 25);
@@ -83,7 +89,8 @@
             // 
             // colunas2
             // 
-            this.colunas2.Location = new System.Drawing.Point(503, 34);
+            this.colunas2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.colunas2.Location = new System.Drawing.Point(565, 37);
             this.colunas2.Multiline = true;
             this.colunas2.Name = "colunas2";
             this.colunas2.Size = new System.Drawing.Size(34, 25);
@@ -92,7 +99,8 @@
             // 
             // linhas2
             // 
-            this.linhas2.Location = new System.Drawing.Point(439, 34);
+            this.linhas2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linhas2.Location = new System.Drawing.Point(501, 37);
             this.linhas2.Multiline = true;
             this.linhas2.Name = "linhas2";
             this.linhas2.Size = new System.Drawing.Size(34, 25);
@@ -101,9 +109,10 @@
             // 
             // X1
             // 
+            this.X1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.X1.AutoSize = true;
             this.X1.Font = new System.Drawing.Font("Moire", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.X1.Location = new System.Drawing.Point(74, 40);
+            this.X1.Location = new System.Drawing.Point(136, 43);
             this.X1.Name = "X1";
             this.X1.Size = new System.Drawing.Size(17, 15);
             this.X1.TabIndex = 12;
@@ -112,9 +121,10 @@
             // 
             // X2
             // 
+            this.X2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.X2.AutoSize = true;
             this.X2.Font = new System.Drawing.Font("Moire", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.X2.Location = new System.Drawing.Point(480, 40);
+            this.X2.Location = new System.Drawing.Point(542, 43);
             this.X2.Name = "X2";
             this.X2.Size = new System.Drawing.Size(17, 15);
             this.X2.TabIndex = 13;
@@ -123,40 +133,73 @@
             // 
             // CriarMatriz
             // 
-            this.CriarMatriz.Location = new System.Drawing.Point(159, 34);
+            this.CriarMatriz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.CriarMatriz.Font = new System.Drawing.Font("Moire", 8F);
+            this.CriarMatriz.Location = new System.Drawing.Point(221, 37);
             this.CriarMatriz.Name = "CriarMatriz";
             this.CriarMatriz.Size = new System.Drawing.Size(48, 23);
             this.CriarMatriz.TabIndex = 14;
             this.CriarMatriz.Text = "Criar";
             this.CriarMatriz.UseVisualStyleBackColor = true;
+            this.CriarMatriz.Visible = false;
             this.CriarMatriz.Click += new System.EventHandler(this.Criar_Matriz);
             // 
             // CriarMatriz2
             // 
-            this.CriarMatriz2.Location = new System.Drawing.Point(566, 34);
+            this.CriarMatriz2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.CriarMatriz2.Font = new System.Drawing.Font("Moire", 8F);
+            this.CriarMatriz2.Location = new System.Drawing.Point(628, 37);
             this.CriarMatriz2.Name = "CriarMatriz2";
             this.CriarMatriz2.Size = new System.Drawing.Size(48, 23);
             this.CriarMatriz2.TabIndex = 15;
             this.CriarMatriz2.Text = "Criar";
             this.CriarMatriz2.UseVisualStyleBackColor = true;
+            this.CriarMatriz2.Visible = false;
             this.CriarMatriz2.Click += new System.EventHandler(this.Criar_Matriz2);
             // 
-            // label1
+            // bttSoma
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Moire", 11F);
-            this.label1.Location = new System.Drawing.Point(832, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 18);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Resultado";
+            this.bttSoma.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.bttSoma.Font = new System.Drawing.Font("Moire", 11F);
+            this.bttSoma.Location = new System.Drawing.Point(317, 37);
+            this.bttSoma.Name = "bttSoma";
+            this.bttSoma.Size = new System.Drawing.Size(37, 27);
+            this.bttSoma.TabIndex = 16;
+            this.bttSoma.Text = "+";
+            this.bttSoma.UseVisualStyleBackColor = true;
+            this.bttSoma.Click += new System.EventHandler(this.Somar);
+            // 
+            // bttSubtrair
+            // 
+            this.bttSubtrair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.bttSubtrair.Font = new System.Drawing.Font("Moire", 11F);
+            this.bttSubtrair.Location = new System.Drawing.Point(360, 37);
+            this.bttSubtrair.Name = "bttSubtrair";
+            this.bttSubtrair.Size = new System.Drawing.Size(37, 27);
+            this.bttSubtrair.TabIndex = 17;
+            this.bttSubtrair.Text = "-";
+            this.bttSubtrair.UseVisualStyleBackColor = true;
+            // 
+            // bttMult
+            // 
+            this.bttMult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.bttMult.Font = new System.Drawing.Font("Moire", 11F);
+            this.bttMult.Location = new System.Drawing.Point(403, 37);
+            this.bttMult.Name = "bttMult";
+            this.bttMult.Size = new System.Drawing.Size(37, 27);
+            this.bttMult.TabIndex = 18;
+            this.bttMult.Text = "*";
+            this.bttMult.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bttMult.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 354);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(753, 435);
+            this.Controls.Add(this.bttMult);
+            this.Controls.Add(this.bttSubtrair);
+            this.Controls.Add(this.bttSoma);
             this.Controls.Add(this.CriarMatriz2);
             this.Controls.Add(this.CriarMatriz);
             this.Controls.Add(this.X2);
@@ -186,7 +229,9 @@
         private System.Windows.Forms.Label X2;
         private System.Windows.Forms.Button CriarMatriz;
         private System.Windows.Forms.Button CriarMatriz2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bttSoma;
+        private System.Windows.Forms.Button bttSubtrair;
+        private System.Windows.Forms.Button bttMult;
 
     }
 }
