@@ -25,3 +25,6 @@ C:\Users\milena.fonseca\Downloads\WindowsFormsApplication1-2015-09-01\Calculador
 C:\Users\milena.fonseca\Downloads\WindowsFormsApplication1-2015-09-01\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\milena.fonseca\Downloads\WindowsFormsApplication1-2015-09-01\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\milena.fonseca\Downloads\WindowsFormsApplication1-2015-09-01\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\fabieli\Documents\CalculadoraMatriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\fabieli\Documents\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\fabieli\Documents\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
