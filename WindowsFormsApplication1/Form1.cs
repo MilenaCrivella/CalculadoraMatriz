@@ -99,12 +99,35 @@ namespace WindowsFormsApplication1
              int[,] valorMatriz1 = new int[Matriz.GetLength(0), Matriz.GetLength(1)];
              int[,] valorMatriz2 = new int[Matriz_2.GetLength(0), Matriz_2.GetLength(1)];
 
+             
+            for (int i = 0; i < Matriz.GetLength(0); i++) 
+             { 
+                 for (int j = 0; j < Matriz.GetLength(1); j++) 
+                 { 
+                     int k = 0; 
+                     int.TryParse(Matriz[i, j].Text, out k); 
+                     valorMatriz1[i, j] = k; 
+                 } 
+             }
+
+            for (int i = 0; i < Matriz_2.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz_2.GetLength(1); j++)
+                {
+                    int k = 0;
+                    int.TryParse(Matriz_2[i, j].Text, out k);
+                    valorMatriz2[i, j] = k;
+                }
+            }  
+
+
+
             if (Linhas1.Text == linhas2.Text && Colunas1.Text == colunas2.Text) 
             {
 
                 int [,] resposta = calculos.Soma(valorMatriz1, valorMatriz2);
                 //int resposta = calculos.Soma(Convert.ToInt32(Matriz[2,2].Text), Convert.ToInt32(Matriz_2[2,2].Text));
-                Console.WriteLine(resposta [0,0]);
+                Console.WriteLine(resposta [2,2]);
             }
         }
 
