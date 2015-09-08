@@ -213,5 +213,29 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void Determinante(object sender, EventArgs e)
+        {
+            int Resposta;
+            if (Linhas1.Text == Colunas1.Text) 
+            {
+                if (Linhas1.Text == "1") 
+                {
+                    Console.WriteLine(Matriz[0,0]);
+                }
+                if (Linhas1.Text == "2")
+                {
+                    Console.WriteLine("2x2");
+                    
+                            Resposta = Convert.ToInt32(Matriz[0, 0].Text) * Convert.ToInt32(Matriz[1, 1].Text);
+                            Console.WriteLine(Resposta);
+
+                }
+                if (Linhas1.Text == "3")
+                {
+                    Console.WriteLine("3x3");
+                }
+            }
+        }
+
     }
 }

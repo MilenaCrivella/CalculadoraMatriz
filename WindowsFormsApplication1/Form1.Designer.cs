@@ -41,6 +41,7 @@
             this.bttSoma = new System.Windows.Forms.Button();
             this.bttSubtrair = new System.Windows.Forms.Button();
             this.bttMult = new System.Windows.Forms.Button();
+            this.bttDeterminante = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Matriz1
@@ -194,11 +195,23 @@
             this.bttMult.UseVisualStyleBackColor = true;
             this.bttMult.Click += new System.EventHandler(this.Multiplicar);
             // 
+            // bttDeterminante
+            // 
+            this.bttDeterminante.Font = new System.Drawing.Font("Moire", 8F);
+            this.bttDeterminante.Location = new System.Drawing.Point(42, 400);
+            this.bttDeterminante.Name = "bttDeterminante";
+            this.bttDeterminante.Size = new System.Drawing.Size(111, 23);
+            this.bttDeterminante.TabIndex = 19;
+            this.bttDeterminante.Text = "Determinante";
+            this.bttDeterminante.UseVisualStyleBackColor = true;
+            this.bttDeterminante.Click += new System.EventHandler(this.Determinante);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 435);
+            this.ClientSize = new System.Drawing.Size(790, 435);
+            this.Controls.Add(this.bttDeterminante);
             this.Controls.Add(this.bttMult);
             this.Controls.Add(this.bttSubtrair);
             this.Controls.Add(this.bttSoma);
@@ -234,6 +247,7 @@
         private System.Windows.Forms.Button bttSoma;
         private System.Windows.Forms.Button bttSubtrair;
         private System.Windows.Forms.Button bttMult;
+        private System.Windows.Forms.Button bttDeterminante;
 
     }
 }
