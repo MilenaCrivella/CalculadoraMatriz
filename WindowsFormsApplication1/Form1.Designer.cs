@@ -192,6 +192,7 @@
             this.bttMult.Text = "*";
             this.bttMult.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bttMult.UseVisualStyleBackColor = true;
+            this.bttMult.Click += new System.EventHandler(this.Multiplicar);
             // 
             // Form1
             // 
