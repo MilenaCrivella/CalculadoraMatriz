@@ -34,3 +34,12 @@ C:\Users\fabieli\Documents\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\
 C:\Users\fabieli\Documents\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\fabieli\Documents\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\fabieli\Documents\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\milena.fonseca\Desktop\GitHub\CalculadoraMatriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb

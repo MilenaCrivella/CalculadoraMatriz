@@ -179,6 +179,7 @@
             this.bttSubtrair.TabIndex = 17;
             this.bttSubtrair.Text = "-";
             this.bttSubtrair.UseVisualStyleBackColor = true;
+            this.bttSubtrair.Click += new System.EventHandler(this.Subtrair);
             // 
             // bttMult
             // 
