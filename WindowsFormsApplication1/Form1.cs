@@ -215,7 +215,9 @@ namespace WindowsFormsApplication1
 
         private void Determinante(object sender, EventArgs e)
         {
-            int Resposta;
+            int num1;
+            int num2;
+            int Resp;
             if (Linhas1.Text == Colunas1.Text) 
             {
                 if (Linhas1.Text == "1") 
@@ -226,8 +228,11 @@ namespace WindowsFormsApplication1
                 {
                     Console.WriteLine("2x2");
                     
-                            Resposta = Convert.ToInt32(Matriz[0, 0].Text) * Convert.ToInt32(Matriz[1, 1].Text);
-                            Console.WriteLine(Resposta);
+                           num1 = Convert.ToInt32(Matriz[0, 0].Text) * Convert.ToInt32(Matriz[1, 1].Text);
+                           num2 = Convert.ToInt32(Matriz[0, 1].Text) * Convert.ToInt32(Matriz[1, 0].Text);
+                           Resp = num1 - num2;
+                        
+                            Console.WriteLine(Resp);
 
                 }
                 if (Linhas1.Text == "3")
