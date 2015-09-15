@@ -235,10 +235,59 @@ namespace WindowsFormsApplication1
                             Console.WriteLine(Resp);
 
                 }
-                if (Linhas1.Text == "3")
+
+               if (Linhas1.Text == "3")
                 {
-                    Console.WriteLine("3x3");
+                 
+                public double readElement(int Linhas, int Colunas)
+                {
+                    return Matriz1[Linhas, Colunas];
                 }
+
+                //sets value of an element for a given row and column of matrix
+                public void setElement(double value, int row, int column)
+                {
+                    matrix[row, column] = value;
+                }
+
+                public double deterMatrix()
+                {
+                    double det = 0;
+                    double value = 0;
+                    int i, j, k;
+
+                    i = row_matrix;
+                    j = column_matrix;
+                    int n = i;
+
+                    if (i != j)
+                    {
+                        Console.WriteLine("determinant can be calculated only for sqaure matrix!");
+                        return det;
+                    }
+
+                    for (i = 0; i < n - 1; i++)
+                    {
+                        for (j = i + 1; j < n; j++)
+                        {
+                            det = (this.readElement(j, i) / this.readElement(i, i));
+
+                            for (k = i; k < n; k++)
+                            {
+                                value = this.readElement(j, k) - det * this.readElement(i, k);
+
+                                this.setElement(value, j, k);
+                            }
+                        }
+                    }
+                    det = 1;
+                    for (i = 0; i < n; i++)
+                        det = det * this.readElement(i, i);
+
+                    return det;
+                }
+            }
+  
             }
         }
 
