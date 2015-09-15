@@ -237,59 +237,55 @@ namespace WindowsFormsApplication1
                 }
 
                if (Linhas1.Text == "3")
-                {
+               /*( {
                  
-                public double readElement(int Linhas, int Colunas)
-                {
-                    return Matriz1[Linhas, Colunas];
-                }
-
-                //sets value of an element for a given row and column of matrix
-                public void setElement(double value, int row, int column)
-                {
-                    matrix[row, column] = value;
-                }
-
-                public double deterMatrix()
-                {
-                    double det = 0;
-                    double value = 0;
-                    int i, j, k;
-
-                    i = row_matrix;
-                    j = column_matrix;
-                    int n = i;
-
-                    if (i != j)
+                    public double readElement(int Linhas, int Colunas)
                     {
-                        Console.WriteLine("determinant can be calculated only for sqaure matrix!");
-                        return det;
+                        return int.Parse(Matriz[Linhas, Colunas].Text);
+                    }
+                    public void setElement(int valor, int Linhas, int Colunas)
+                    {
+                       Convert.ToInt32(Matriz[Linhas, Colunas].Text) = valor;
                     }
 
-                    for (i = 0; i < n - 1; i++)
+                    public double deterMatrix()
                     {
-                        for (j = i + 1; j < n; j++)
+                        double det = 0;
+                        double valor = 0;
+                        int i, j, k;
+
+                        i = int.Parse(Linhas1.Text);
+                        j = int.Parse(Colunas1.Text);
+
+                        int n = i;
+
+                        if (i != j)
                         {
-                            det = (this.readElement(j, i) / this.readElement(i, i));
+                            Console.WriteLine("Não pode ser calculado");
+                            return det;
+                        }
 
-                            for (k = i; k < n; k++)
+                        for (i = 0; i < n - 1; i++)
+                        {
+                            for (j = i + 1; j < n; j++)
                             {
-                                value = this.readElement(j, k) - det * this.readElement(i, k);
+                                det = (this.readElement(j, i) / this.readElement(i, i));
 
-                                this.setElement(value, j, k);
+                                for (k = i; k < n; k++)
+                                {
+                                    valor = this.readElement(j, k) - det * this.readElement(i, k);
+
+                                    this.setElement(valor, j, k);
+                                }
                             }
                         }
-                    }
-                    det = 1;
-                    for (i = 0; i < n; i++)
-                        det = det * this.readElement(i, i);
+                        det = 1;
+                        for (i = 0; i < n; i++)
+                            det = det * this.readElement(i, i);
 
-                    return det;
+                        return det;*/
                 }
-            }
-  
-            }
-        }
-
     }
+}
+}
 }
