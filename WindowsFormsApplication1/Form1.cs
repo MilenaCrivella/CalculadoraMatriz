@@ -215,77 +215,7 @@ namespace WindowsFormsApplication1
 
         private void Determinante(object sender, EventArgs e)
         {
-            int num1;
-            int num2;
-            int Resp;
-            if (Linhas1.Text == Colunas1.Text) 
-            {
-                if (Linhas1.Text == "1") 
-                {
-                    Console.WriteLine(Matriz[0,0]);
-                }
-                if (Linhas1.Text == "2")
-                {
-                    Console.WriteLine("2x2");
-                    
-                           num1 = Convert.ToInt32(Matriz[0, 0].Text) * Convert.ToInt32(Matriz[1, 1].Text);
-                           num2 = Convert.ToInt32(Matriz[0, 1].Text) * Convert.ToInt32(Matriz[1, 0].Text);
-                           Resp = num1 - num2;
-                        
-                            Console.WriteLine(Resp);
-
-                }
-
-               if (Linhas1.Text == "3")
-               /*( {
-                 
-                    public double readElement(int Linhas, int Colunas)
-                    {
-                        return int.Parse(Matriz[Linhas, Colunas].Text);
-                    }
-                    public void setElement(int valor, int Linhas, int Colunas)
-                    {
-                       Convert.ToInt32(Matriz[Linhas, Colunas].Text) = valor;
-                    }
-
-                    public double deterMatrix()
-                    {
-                        double det = 0;
-                        double valor = 0;
-                        int i, j, k;
-
-                        i = int.Parse(Linhas1.Text);
-                        j = int.Parse(Colunas1.Text);
-
-                        int n = i;
-
-                        if (i != j)
-                        {
-                            Console.WriteLine("Não pode ser calculado");
-                            return det;
-                        }
-
-                        for (i = 0; i < n - 1; i++)
-                        {
-                            for (j = i + 1; j < n; j++)
-                            {
-                                det = (this.readElement(j, i) / this.readElement(i, i));
-
-                                for (k = i; k < n; k++)
-                                {
-                                    valor = this.readElement(j, k) - det * this.readElement(i, k);
-
-                                    this.setElement(valor, j, k);
-                                }
-                            }
-                        }
-                        det = 1;
-                        for (i = 0; i < n; i++)
-                            det = det * this.readElement(i, i);
-
-                        return det;*/
-                }
+            
+        }
     }
-}
-}
 }

@@ -51,6 +51,50 @@ namespace WindowsFormsApplication1
             return matrizResposta;
         }
 
+        public float Determinante(float[,] Matriz1)
+        {
+            int num1;
+            int num2;
+            int Resp;
+                if (Matriz1.GetLength(0) == 1)
+                {
+                    Console.WriteLine(Matriz1[0, 0]);
+                }
+                else if (Matriz1.GetLength(0) == 2)
+                {
+                    Console.WriteLine("2x2");
+                    num1 = Convert.ToInt32(Matriz1[0, 0]) * Convert.ToInt32(Matriz1[1, 1]);
+                    num2 = Convert.ToInt32(Matriz1[0, 1]) * Convert.ToInt32(Matriz1[1, 0]);
+                    Resp = num1 - num2;
+                }
+                else if (Matriz1.GetLength(0) == 3)
+                {
+                    num1 = (Convert.ToInt32(Matriz1[0, 0]) * Convert.ToInt32(Matriz1[1, 1]) * Convert.ToInt32(Matriz1[2, 2])) +
+                           (Convert.ToInt32(Matriz1[0, 1]) * Convert.ToInt32(Matriz1[1, 2]) * Convert.ToInt32(Matriz1[2, 0])) +
+                           (Convert.ToInt32(Matriz1[0, 2]) * Convert.ToInt32(Matriz1[1, 0]) * Convert.ToInt32(Matriz1[2, 1]));
+
+                    num2 = (Convert.ToInt32(Matriz1[0, 1]) * Convert.ToInt32(Matriz1[1, 0]) * Convert.ToInt32(Matriz1[2, 2])) +
+                           (Convert.ToInt32(Matriz1[0, 0]) * Convert.ToInt32(Matriz1[1, 2]) * Convert.ToInt32(Matriz1[2, 1])) +
+                           (Convert.ToInt32(Matriz1[0, 2]) * Convert.ToInt32(Matriz1[1, 1]) * Convert.ToInt32(Matriz1[2, 0]));
+
+                    Resp = num1 - num2;
+
+                }
+                else
+                {
+                    for (int i = 1; i < Matriz1.GetLength(0); i++)
+                    {
+                        for (int j = 1; j < Matriz1.GetLength(1); j++)
+                        {
+                            Resp = Convert.ToInt32(Matriz1[i, j]) - Convert.ToInt32(Matriz1[0, j]) * Convert.ToInt32(Matriz1[i, 0]);
+                            Console.WriteLine(Resp);
+                        }
+                    }
+
+                }
+            
+        }
+
        
     } 
 }
