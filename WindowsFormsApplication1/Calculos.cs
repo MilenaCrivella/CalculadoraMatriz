@@ -53,48 +53,79 @@ namespace WindowsFormsApplication1
 
         public float Determinante(float[,] Matriz1)
         {
-            int num1;
-            int num2;
-            int Resp;
+            float num1;
+            float num2;
+            float Resp = 0;
+            float a = 1;
                 if (Matriz1.GetLength(0) == 1)
                 {
-                    Console.WriteLine(Matriz1[0, 0]);
+                    return Matriz1[0, 0];
                 }
                 else if (Matriz1.GetLength(0) == 2)
                 {
                     Console.WriteLine("2x2");
-                    num1 = Convert.ToInt32(Matriz1[0, 0]) * Convert.ToInt32(Matriz1[1, 1]);
-                    num2 = Convert.ToInt32(Matriz1[0, 1]) * Convert.ToInt32(Matriz1[1, 0]);
+                    num1 = (Matriz1[0, 0]) * (Matriz1[1, 1]);
+                    num2 = (Matriz1[0, 1]) * (Matriz1[1, 0]);
                     Resp = num1 - num2;
                 }
                 else if (Matriz1.GetLength(0) == 3)
                 {
-                    num1 = (Convert.ToInt32(Matriz1[0, 0]) * Convert.ToInt32(Matriz1[1, 1]) * Convert.ToInt32(Matriz1[2, 2])) +
-                           (Convert.ToInt32(Matriz1[0, 1]) * Convert.ToInt32(Matriz1[1, 2]) * Convert.ToInt32(Matriz1[2, 0])) +
-                           (Convert.ToInt32(Matriz1[0, 2]) * Convert.ToInt32(Matriz1[1, 0]) * Convert.ToInt32(Matriz1[2, 1]));
+                    num1 = ((Matriz1[0, 0]) * (Matriz1[1, 1]) * (Matriz1[2, 2])) +
+                           ((Matriz1[0, 1]) * (Matriz1[1, 2]) * (Matriz1[2, 0])) +
+                           ((Matriz1[0, 2]) * (Matriz1[1, 0]) * (Matriz1[2, 1]));
 
-                    num2 = (Convert.ToInt32(Matriz1[0, 1]) * Convert.ToInt32(Matriz1[1, 0]) * Convert.ToInt32(Matriz1[2, 2])) +
-                           (Convert.ToInt32(Matriz1[0, 0]) * Convert.ToInt32(Matriz1[1, 2]) * Convert.ToInt32(Matriz1[2, 1])) +
-                           (Convert.ToInt32(Matriz1[0, 2]) * Convert.ToInt32(Matriz1[1, 1]) * Convert.ToInt32(Matriz1[2, 0]));
+                    num2 = ((Matriz1[0, 1]) * (Matriz1[1, 0]) * (Matriz1[2, 2])) +
+                           ((Matriz1[0, 0]) * (Matriz1[1, 2]) * (Matriz1[2, 1])) +
+                           ((Matriz1[0, 2]) * (Matriz1[1, 1]) * (Matriz1[2, 0]));
 
                     Resp = num1 - num2;
 
                 }
                 else
                 {
-                    for (int i = 1; i < Matriz1.GetLength(0); i++)
+                    bool foi = false;
+                    for (int j = 0; j < Matriz1.GetLength(0); j++)
                     {
-                        for (int j = 1; j < Matriz1.GetLength(1); j++)
+                        if(Matriz1[j,0] != 0)
                         {
-                            Resp = Convert.ToInt32(Matriz1[i, j]) - Convert.ToInt32(Matriz1[0, j]) * Convert.ToInt32(Matriz1[i, 0]);
-                            Console.WriteLine(Resp);
+                        
+                            if(j != 0)
+                            {
+                                a *= -1;
+                                float[] temp = new float[Matriz1.GetLength(0)];
+                                for(int i = 0; i < Matriz1.GetLength(0); i++)
+                                {
+                                    temp[i] = Matriz1[j, i];
+                                    Matriz1[j,i] = Matriz1[0,i];
+                                    Matriz1[0, i] = temp[i];
+                                }
+                            }
+                            j = Matriz1.GetLength(0);
+                            foi = true;
                         }
                     }
-
-                }
-            
-        }
-
-       
+                    if(foi)
+                    {
+                        a /= (Matriz1[0, 0]);
+                        float[,] M2 = new float[Matriz1.GetLength(0) - 1, Matriz1.GetLength(1) - 1];
+                        for (int i = 0; i < Matriz1.GetLength(0); i++)
+                        {
+                            Matriz1[i, 0] *= a;
+                        }
+                        for (int i = 1; i < Matriz1.GetLength(0); i++)
+                        {
+                            for (int j = 1; j < Matriz1.GetLength(1); j++)
+                            {
+                                M2[i-1,j-1] = (Matriz1[i, j]) - (Matriz1[0, j]) * (Matriz1[i, 0]);
+                                Console.WriteLine(Resp);
+                            }
+                        }
+                        Resp = Determinante(M2);
+                    }
+                    else
+                        Resp = 0;
+             }
+                return Resp/a;
+        }   
     } 
 }

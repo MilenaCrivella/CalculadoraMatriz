@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         Calculos calculos = new Calculos();
         int i;
         int j;
-
+        float[,] M1 = new float[4,4]{{4,1,2,6},{4,4,7,2},{5,2,7,1},{5,6,3,3}};
 
         //int[,] varMatriz1 = new int[Matriz.GetLength(0), Matriz.GetLength(1)];
         public Form1()
@@ -27,6 +27,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             Calculo_Formula prompt = new Calculo_Formula();
             calc();
+            calculos.Determinante(M1);
         }
 
         public void calc()
@@ -119,8 +120,6 @@ namespace WindowsFormsApplication1
                     valorMatriz2[i, j] = k;
                 }
             }
-
-
             
             if (Linhas1.Text == linhas2.Text && Colunas1.Text == colunas2.Text) 
             {
@@ -134,7 +133,6 @@ namespace WindowsFormsApplication1
                 }
             }
         }
-
         private void Subtrair(object sender, EventArgs e)
         {
             int[,] valorMatriz1 = new int[Matriz.GetLength(0), Matriz.GetLength(1)];
@@ -215,7 +213,17 @@ namespace WindowsFormsApplication1
 
         private void Determinante(object sender, EventArgs e)
         {
-            
+            float[,] matrizF = new float[Matriz.GetLength(0), Matriz.GetLength(1)];
+
+            for (int i = 0; i < Matriz.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz.GetLength(1); j++)
+                {
+                    matrizF[i, j] = float.Parse(Matriz[i, j].Text);
+                }
+            }
+
+                Console.WriteLine(calculos.Determinante(matrizF));
         }
     }
 }
