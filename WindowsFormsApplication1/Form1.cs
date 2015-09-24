@@ -19,6 +19,8 @@ namespace WindowsFormsApplication1
         Calculos calculos = new Calculos();
         int i;
         int j;
+        bool SimetricaFinal = false;
+        bool simetrica = false;
         float[,] M1 = new float[4,4]{{4,1,2,6},{4,4,7,2},{5,2,7,1},{5,6,3,3}};
 
         //int[,] varMatriz1 = new int[Matriz.GetLength(0), Matriz.GetLength(1)];
@@ -29,7 +31,6 @@ namespace WindowsFormsApplication1
             calc();
             calculos.Determinante(M1);
         }
-
         public void calc()
         {
             if (promptValue == "calc") 
@@ -52,7 +53,6 @@ namespace WindowsFormsApplication1
 
             }
         }
-
         private void Criar_Matriz(object sender, EventArgs e)
         {
 
@@ -74,7 +74,6 @@ namespace WindowsFormsApplication1
                 }
             }
         }
-
         private void Criar_Matriz2(object sender, EventArgs e)
         {
             int linha = Int16.Parse(linhas2.Text);
@@ -128,7 +127,7 @@ namespace WindowsFormsApplication1
                     for (int j = 0; j < Matriz.GetLength(1); j++)
                     {
                         int[,] resposta = calculos.Soma(valorMatriz1, valorMatriz2);
-                        Console.WriteLine(resposta[i, j]);
+                       // Console.WriteLine(resposta[i, j]);
                     }
                 }
             }
@@ -167,12 +166,11 @@ namespace WindowsFormsApplication1
                     for (int j = 0; j < Matriz.GetLength(1); j++)
                     {
                         int[,] resposta = calculos.Subtrai(valorMatriz1, valorMatriz2);
-                        Console.WriteLine(resposta[i, j]);
+                        //Console.WriteLine(resposta[i, j]);
                     }
                 }
             }
         }
-
         private void Multiplicar(object sender, EventArgs e)
         {
             int[,] valorMatriz1 = new int[Matriz.GetLength(0), Matriz.GetLength(1)];
@@ -205,12 +203,11 @@ namespace WindowsFormsApplication1
                     for (int j = 0; j < Matriz.GetLength(1); j++)
                     {
                         int[,] resposta = calculos.Multiplica(valorMatriz1, valorMatriz2);
-                        Console.WriteLine(resposta[i, j]);
+                        //Console.WriteLine(resposta[i, j]);
                     }
                 }
             }
         }
-
         private void Determinante(object sender, EventArgs e)
         {
             float[,] matrizF = new float[Matriz.GetLength(0), Matriz.GetLength(1)];
@@ -223,7 +220,44 @@ namespace WindowsFormsApplication1
                 }
             }
 
-                Console.WriteLine(calculos.Determinante(matrizF));
+                //Console.WriteLine(calculos.Determinante(matrizF));
         }
+        private void Transposta(object sender, EventArgs e)
+        {
+            int [,] a = new int[Matriz.GetLength(0),Matriz.GetLength(1)];
+
+            for (int i = 0; i < Matriz.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz.GetLength(1); j++)
+                {
+                    a[i,j] = Convert.ToInt32(Matriz[j,i].Text);  
+                }
+            }
+
+            for (int i = 0; i < Matriz.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz.GetLength(1); j++)
+                {
+                    if (Matriz[i, j].Text.Equals(a[i, j].ToString())) simetrica = true;
+                    else simetrica = false;
+
+                    for (int k = 1; k <= i * j; k++)
+                    { 
+                        if (simetrica == false) SimetricaFinal = false;
+                        else SimetricaFinal = true;
+                    }
+                        
+
+                    Matriz[i, j].Text = a[i, j].ToString();
+                    //Console.WriteLine(a[i, j]);
+                    Console.WriteLine(simetrica);
+                }
+            }
+            Console.WriteLine("SF: " + SimetricaFinal);
+            
+            
+        }
+
+    
     }
 }

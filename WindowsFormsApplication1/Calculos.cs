@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
     class Calculos
     {
+     
+        #region Soma
         public int [,] Soma (int [,] matriz1 ,int [,] matriz2)
         {
             int[,] matrizResposta = new int[matriz1.GetLength(0), matriz1.GetLength(1)];
@@ -20,7 +26,9 @@ namespace WindowsFormsApplication1
             }
             return matrizResposta;
         }
+        #endregion 
 
+        #region Subtração
         public int[,] Subtrai (int[,] matriz1, int[,] matriz2)
         {
             int[,] matrizResposta = new int[matriz1.GetLength(0), matriz1.GetLength(1)];
@@ -33,7 +41,9 @@ namespace WindowsFormsApplication1
             }
             return matrizResposta;
         }
+        #endregion 
 
+        #region Multiplicação
         public int[,] Multiplica(int[,] matriz1, int[,] matriz2)
         {
             int[,] matrizResposta = new int[matriz1.GetLength(0), matriz2.GetLength(1)];
@@ -50,7 +60,9 @@ namespace WindowsFormsApplication1
             }
             return matrizResposta;
         }
+        #endregion
 
+        #region Determinante
         public float Determinante(float[,] Matriz1)
         {
             float num1;
@@ -126,6 +138,20 @@ namespace WindowsFormsApplication1
                         Resp = 0;
              }
                 return Resp/a;
-        }   
+        }
+
+        #endregion
+
+        //public float Transposta(float[,] Matriz1)
+        //{
+        //    for (int i = 0; i < Matriz1.GetLength(0); i++) 
+        //    {
+        //        for (int j = i + 1; j < Matriz1.GetLength(1); j++)
+        //        {
+                    
+        //        }
+        //    }
+        //}
     } 
+        
 }
