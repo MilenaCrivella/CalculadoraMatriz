@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         Calculos calculos = new Calculos();
         int i;
         int j;
-        bool SimetricaFinal = false;
+        int SimetricaFinal = 0;
         bool simetrica = false;
         float[,] M1 = new float[4,4]{{4,1,2,6},{4,4,7,2},{5,2,7,1},{5,6,3,3}};
 
@@ -240,24 +240,20 @@ namespace WindowsFormsApplication1
                 {
                     if (Matriz[i, j].Text.Equals(a[i, j].ToString())) simetrica = true;
                     else simetrica = false;
-
-                    for (int k = 1; k <= i * j; k++)
-                    { 
-                        if (simetrica == false) SimetricaFinal = false;
-                        else SimetricaFinal = true;
-                    }
-                        
-
-                    Matriz[i, j].Text = a[i, j].ToString();
-                    //Console.WriteLine(a[i, j]);
-                    Console.WriteLine(simetrica);
+                    if (simetrica == false) SimetricaFinal += 1;
+                    Matriz[i, j].Text = a[i, j].ToString(); 
                 }
             }
-            Console.WriteLine("SF: " + SimetricaFinal);
+
+                    if (SimetricaFinal >= 1) Console.WriteLine(" Não É simetrica eeeeeeeee"); 
+                    //Console.WriteLine(a[i, j]);
+                    Console.WriteLine(simetrica);
+                    Console.WriteLine("SF: " + SimetricaFinal);
+                    SimetricaFinal = 0;
+                }
+            }
+            
             
             
         }
 
-    
-    }
-}
