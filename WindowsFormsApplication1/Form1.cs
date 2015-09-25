@@ -268,7 +268,14 @@ namespace WindowsFormsApplication1
 
         private void Inversa(object sender, EventArgs e)
         {
-            
+            float[,] a = calculos.Inversa(TextBoxToFloat(Matriz));
+            for (int i = 0; i < Matriz.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz.GetLength(1); j++)
+                {
+                    Console.WriteLine(a[i,j]);
+                }
+            }
         } 
      }
 }

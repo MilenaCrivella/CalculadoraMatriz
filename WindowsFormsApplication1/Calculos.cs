@@ -62,6 +62,19 @@ namespace WindowsFormsApplication1
         }
         #endregion
 
+        public float[,] MultiplicaçaoNormal(float[,] matriz1, float M)
+        {
+            float[,] matrizResposta = new float[matriz1.GetLength(0), matriz1.GetLength(1)];
+            for (int i = 0; i < matrizResposta.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrizResposta.GetLength(1); j++)
+                {
+                    matrizResposta[i, j] = matriz1[i, j]*M;
+                }
+            }
+            return matrizResposta;
+        }
+
         #region Determinante
         public float Determinante(float[,] Matriz1)
         {
@@ -189,21 +202,10 @@ namespace WindowsFormsApplication1
 
             return Transposta(resposta);
         }
-        public float Inversa(float[,] Matriz1)
+        public float[,] Inversa(float[,] Matriz1)
         {
-            float Potencia =  0;
-            float D = Determinante(Matriz1);  
-
-            for (int i = 0; i < Matriz1.GetLength(0); i++)
-            {
-                for (int j = 0; j < Matriz1.GetLength(1); j++)
-                {
-                   Potencia = (float)Math.Pow(-1, (i+j));
-                }
-            }
-
-
-            return Potencia;
+            float[,] MatrizI = MultiplicaçaoNormal(Adjunta(Matriz1), 1 / Determinante(Matriz1));
+            return MatrizI;
         }
     } 
         
