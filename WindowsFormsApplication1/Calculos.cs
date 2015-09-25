@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1
 {
     class Calculos
     {
-     
+        
         #region Soma
         public int [,] Soma (int [,] matriz1 ,int [,] matriz2)
         {
@@ -141,17 +141,70 @@ namespace WindowsFormsApplication1
         }
 
         #endregion
+        public float[,] Transposta(float[,] Matriz1)
+        {
+            float[,] a = new float[Matriz1.GetLength(0), Matriz1.GetLength(1)];
 
-        //public float Transposta(float[,] Matriz1)
-        //{
-        //    for (int i = 0; i < Matriz1.GetLength(0); i++) 
-        //    {
-        //        for (int j = i + 1; j < Matriz1.GetLength(1); j++)
-        //        {
-                    
-        //        }
-        //    }
-        //}
+            for (int i = 0; i < Matriz1.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz1.GetLength(1); j++)
+                {
+                    a[i, j] = Matriz1[j, i];
+                }
+            }
+
+            return a;
+        }
+        public float Cofator(float[,] Matriz1, int linha, int coluna)
+        { 
+            float[,] M2 = new float[Matriz1.GetLength(0) - 1, Matriz1.GetLength(1) - 1];
+            int i2 = 0;
+            int j2 = 0;
+            for (int i = 0; i < Matriz1.GetLength(0); i++)
+            {
+                if (i == linha) i++;
+                for (int j = 0; j < Matriz1.GetLength(1); j++)
+                {
+                    if (j == coluna) j++;
+                    if (i < Matriz1.GetLength(0) && j < Matriz1.GetLength(1)) M2[i2, j2] = Matriz1[i, j];
+                    j2++;
+                }
+                i2++;
+                j2 = 0;
+            }
+            
+                return (float)Math.Pow(-1, linha + coluna + 2) * Determinante(M2);
+        }
+
+        public float[,] Adjunta(float[,] Matriz1) 
+        {
+            float [,] resposta = new float [Matriz1.GetLength(0), Matriz1.GetLength(1)];
+            for (int i = 0; i < Matriz1.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz1.GetLength(1); j++)
+                {
+                    resposta[i, j] = Cofator(Matriz1, i, j);
+                }
+            }
+
+            return Transposta(resposta);
+        }
+        public float Inversa(float[,] Matriz1)
+        {
+            float Potencia =  0;
+            float D = Determinante(Matriz1);  
+
+            for (int i = 0; i < Matriz1.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz1.GetLength(1); j++)
+                {
+                   Potencia = (float)Math.Pow(-1, (i+j));
+                }
+            }
+
+
+            return Potencia;
+        }
     } 
         
 }

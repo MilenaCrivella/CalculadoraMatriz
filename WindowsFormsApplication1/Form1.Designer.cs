@@ -43,6 +43,8 @@
             this.bttMult = new System.Windows.Forms.Button();
             this.bttDeterminante = new System.Windows.Forms.Button();
             this.bttTransposta = new System.Windows.Forms.Button();
+            this.bttOposta = new System.Windows.Forms.Button();
+            this.bttInversa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Matriz1
@@ -199,7 +201,7 @@
             // bttDeterminante
             // 
             this.bttDeterminante.Font = new System.Drawing.Font("Moire", 8F);
-            this.bttDeterminante.Location = new System.Drawing.Point(96, 395);
+            this.bttDeterminante.Location = new System.Drawing.Point(42, 366);
             this.bttDeterminante.Name = "bttDeterminante";
             this.bttDeterminante.Size = new System.Drawing.Size(111, 23);
             this.bttDeterminante.TabIndex = 19;
@@ -210,7 +212,7 @@
             // bttTransposta
             // 
             this.bttTransposta.Font = new System.Drawing.Font("Moire", 8F);
-            this.bttTransposta.Location = new System.Drawing.Point(96, 366);
+            this.bttTransposta.Location = new System.Drawing.Point(199, 337);
             this.bttTransposta.Name = "bttTransposta";
             this.bttTransposta.Size = new System.Drawing.Size(111, 23);
             this.bttTransposta.TabIndex = 20;
@@ -218,11 +220,35 @@
             this.bttTransposta.UseVisualStyleBackColor = true;
             this.bttTransposta.Click += new System.EventHandler(this.Transposta);
             // 
+            // bttOposta
+            // 
+            this.bttOposta.Font = new System.Drawing.Font("Moire", 8F);
+            this.bttOposta.Location = new System.Drawing.Point(42, 337);
+            this.bttOposta.Name = "bttOposta";
+            this.bttOposta.Size = new System.Drawing.Size(111, 23);
+            this.bttOposta.TabIndex = 21;
+            this.bttOposta.Text = "Oposta";
+            this.bttOposta.UseVisualStyleBackColor = true;
+            this.bttOposta.Click += new System.EventHandler(this.Oposta);
+            // 
+            // bttInversa
+            // 
+            this.bttInversa.Font = new System.Drawing.Font("Moire", 8F);
+            this.bttInversa.Location = new System.Drawing.Point(199, 366);
+            this.bttInversa.Name = "bttInversa";
+            this.bttInversa.Size = new System.Drawing.Size(111, 23);
+            this.bttInversa.TabIndex = 22;
+            this.bttInversa.Text = "Inversa";
+            this.bttInversa.UseVisualStyleBackColor = true;
+            this.bttInversa.Click += new System.EventHandler(this.Inversa);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 435);
+            this.Controls.Add(this.bttInversa);
+            this.Controls.Add(this.bttOposta);
             this.Controls.Add(this.bttTransposta);
             this.Controls.Add(this.bttDeterminante);
             this.Controls.Add(this.bttMult);
@@ -262,6 +288,8 @@
         private System.Windows.Forms.Button bttMult;
         private System.Windows.Forms.Button bttDeterminante;
         private System.Windows.Forms.Button bttTransposta;
+        private System.Windows.Forms.Button bttOposta;
+        private System.Windows.Forms.Button bttInversa;
 
     }
 }

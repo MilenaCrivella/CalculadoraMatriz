@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        #region Variáveis
         string promptValue = Calculo_Formula.ShowDialog("Calcular matriz:", "Determinando a matriz");
         private TextBox [,] Matriz;
         private TextBox [,] Matriz_2;
@@ -24,6 +25,7 @@ namespace WindowsFormsApplication1
         float[,] M1 = new float[4,4]{{4,1,2,6},{4,4,7,2},{5,2,7,1},{5,6,3,3}};
 
         //int[,] varMatriz1 = new int[Matriz.GetLength(0), Matriz.GetLength(1)];
+        #endregion
         public Form1()
         {
             InitializeComponent();
@@ -127,7 +129,7 @@ namespace WindowsFormsApplication1
                     for (int j = 0; j < Matriz.GetLength(1); j++)
                     {
                         int[,] resposta = calculos.Soma(valorMatriz1, valorMatriz2);
-                       // Console.WriteLine(resposta[i, j]);
+                        Console.WriteLine(resposta[i, j]);
                     }
                 }
             }
@@ -222,18 +224,21 @@ namespace WindowsFormsApplication1
 
                 //Console.WriteLine(calculos.Determinante(matrizF));
         }
-        private void Transposta(object sender, EventArgs e)
+        float[,] TextBoxToFloat(TextBox[,] MatrizM)
         {
-            int [,] a = new int[Matriz.GetLength(0),Matriz.GetLength(1)];
-
-            for (int i = 0; i < Matriz.GetLength(0); i++)
-            {
-                for (int j = 0; j < Matriz.GetLength(1); j++)
+            float[,] a = new float[MatrizM.GetLength(0), MatrizM.GetLength(1)];
+            for(int i = 0; i < MatrizM.GetLength(0); i ++)
+            {                
+                for (int j = 0; j < MatrizM.GetLength(1); j++)
                 {
-                    a[i,j] = Convert.ToInt32(Matriz[j,i].Text);  
+                    a[i, j] = Convert.ToInt32(MatrizM[i, j].Text);
                 }
             }
-
+            return a;
+        }
+        private void Transposta(object sender, EventArgs e)
+        {
+            float[,] a = calculos.Transposta(TextBoxToFloat(Matriz));
             for (int i = 0; i < Matriz.GetLength(0); i++)
             {
                 for (int j = 0; j < Matriz.GetLength(1); j++)
@@ -246,14 +251,25 @@ namespace WindowsFormsApplication1
             }
 
                     if (SimetricaFinal >= 1) Console.WriteLine(" Não É simetrica eeeeeeeee"); 
-                    //Console.WriteLine(a[i, j]);
                     Console.WriteLine(simetrica);
                     Console.WriteLine("SF: " + SimetricaFinal);
                     SimetricaFinal = 0;
                 }
+        private void Oposta(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Matriz.GetLength(0); i++)
+            {
+                for (int j = 0; j < Matriz.GetLength(1); j++)
+                {
+                    Matriz[i, j].Text = (Convert.ToInt32(Matriz[i, j].Text) * -1).ToString();
+                }
             }
-            
-            
-            
         }
+
+        private void Inversa(object sender, EventArgs e)
+        {
+            
+        } 
+     }
+}
 
