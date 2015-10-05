@@ -1,0 +1,54 @@
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe.config
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Form1.resources
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Properties.Resources.resources
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csproj.GenerateResource.Cache
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.exe
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe.config
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.exe
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Form1.resources
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Properties.Resources.resources
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csproj.GenerateResource.Cache
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe.config
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.exe
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Form1.resources
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Properties.Resources.resources
+C:\Users\Gabriel.Souza\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csproj.GenerateResource.Cache
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe.config
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.exe
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.pdb
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.pdb
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Form1.resources
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Properties.Resources.resources
+C:\Users\Claudia\Desktop\Coisas do Biel =]\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csproj.GenerateResource.Cache
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe.config
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.exe
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.pdb
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Form1.resources
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Properties.Resources.resources
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csproj.GenerateResource.Cache
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe
+C:\Users\Thais.Alves\Desktop\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe.config
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.exe
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.exe
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\bin\Debug\MatrixCalculator.pdb
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Form1.resources
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\Calculadora de Matriz\Calculadora de Matriz\Calculadora de Matriz\MatrixCalculator\MatrixCalculator\obj\Debug\MatrixCalculator.csproj.GenerateResource.Cache
